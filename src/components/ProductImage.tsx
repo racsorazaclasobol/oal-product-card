@@ -16,6 +16,8 @@ export const ProductImage = ( { img, className }: ProductImageProps ) => {
     imgToShow = ( img ) ? img : ( ( product?.img ) ? product.img : noImage );
 
     return (
-        <img className={ `productImg ${ className }` } src={ imgToShow } alt='Product Image' />    
+
+        <img className={ `productImg ${ className }` } src={ imgToShow } alt='Product Image' />   
+         
     )
 }
